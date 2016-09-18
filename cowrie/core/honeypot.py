@@ -351,9 +351,9 @@ class HoneyPotShell(object):
         # Example: root@svr03:~#     (More of a "Debian" feel)
         prompt = '{}@{}:{}'.format(self.protocol.user.username, self.protocol.hostname, cwd).encode('ascii')
         if not self.protocol.user.uid:
-            prompt += '# '    # "Root" user
+            prompt += b'# '    # "Root" user
         else:
-            prompt += '$ '    # "Non-Root" user
+            prompt += b'$ '    # "Non-Root" user
         self.protocol.terminal.write(prompt)
         self.protocol.ps = (prompt , '> ')
 
