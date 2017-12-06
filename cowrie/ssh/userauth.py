@@ -32,9 +32,9 @@ class HoneyPotSSHUserAuthServer(userauth.SSHUserAuthServer):
     def serviceStarted(self):
         """
         """
-        self.interfaceToMethod[credentials.IUsername] = 'none'
+        # self.interfaceToMethod[credentials.IUsername] = 'none'
         self.interfaceToMethod[credentials.IUsernamePasswordIP] = 'password'
-        self.interfaceToMethod[credentials.IPluggableAuthenticationModulesIP] = 'keyboard-interactive'
+        # self.interfaceToMethod[credentials.IPluggableAuthenticationModulesIP] = 'keyboard-interactive'
         self.bannerSent = False
         self._pamDeferred = None
         userauth.SSHUserAuthServer.serviceStarted(self)
