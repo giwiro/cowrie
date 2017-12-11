@@ -6,7 +6,7 @@ AUTHBIND_ENABLED=no
 VIRTUALENV_ENABLED=yes
 
 #Change the below to -n to disable daemonizing (for instance when using supervisor)
-DAEMONIZE=""
+DAEMONIZE="-n"
 
 ################################################################################
 ## don't modify below here ##
