@@ -5,7 +5,7 @@
 #COWRIE_VIRTUAL_ENV=my-env
 
 #Change the below to -n to disable daemonizing (for instance when using supervisor)
-DAEMONIZE=""
+DAEMONIZE="-n"
 
 # Log to stdout instead of a separate file (same behaviour as Docker)
 # STDOUT="no"
